@@ -1,0 +1,121 @@
+- name: Interaction Geography Slicer
+  url: https://slicer.interactiongeography.org
+  category: Classroom Analysis
+  group: Our Tools
+  cost: free
+  privacy: high
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    A visualization tool for analyzing classroom interaction patterns. Processes
+    transcript data to reveal the geography of participation — who speaks, when,
+    and in what patterns — across a class session.
+  educatorNotes: >-
+    Powerful for teacher education courses focused on equitable participation and
+    discussion facilitation. Pre-service teachers can use it to analyze their own
+    teaching practice or study interaction patterns in sample transcripts.
+
+- name: Mondrian Transcription
+  url: https://mondrian.interactiongeography.org
+  category: Classroom Analysis
+  group: Our Tools
+  cost: free
+  privacy: high
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    A transcript visualization tool that transforms conversation data into
+    Mondrian-style visual representations, making temporal patterns and
+    participation structures immediately visible at a glance.
+  educatorNotes: >-
+    Pairs well with the Interaction Geography Slicer for a complete classroom
+    discourse analysis workflow. The visual output is especially effective for
+    helping pre-service teachers see participation imbalances they might
+    otherwise miss.
+
+- name: Claude
+  url: https://claude.ai
+  category: AI Assistant
+  group: AI Assistants
+  cost: freemium
+  privacy: high
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    Anthropic's AI assistant, known for nuanced reasoning, long-context
+    capability, and strong performance on complex analytical and writing tasks.
+    Supports extended conversations with large documents and codebases.
+  educatorNotes: >-
+    Particularly strong for curriculum analysis, rubric design, and providing
+    detailed feedback on student writing. The free tier is sufficient for
+    exploratory use; Pro tier recommended for regular integration into workflows.
+
+- name: NotebookLM
+  url: https://notebooklm.google.com
+  category: AI Research Tool
+  group: AI Assistants
+  cost: free
+  privacy: moderate
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    Google's AI-powered research and note-taking tool that grounds its responses
+    in documents you upload. Generates summaries, answers questions, and creates
+    audio overviews from your source materials.
+  educatorNotes: >-
+    Useful for literature review support, synthesizing readings for courses, and
+    generating study guides grounded in specific texts. The source-grounding
+    feature reduces hallucination risk compared to general-purpose AI assistants.
+
+- name: Perplexity
+  url: https://www.perplexity.ai
+  category: AI Search
+  group: AI Assistants
+  cost: freemium
+  privacy: moderate
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    An AI-powered search engine that provides cited, sourced answers to
+    questions. Combines web search with language model synthesis to deliver
+    research-oriented responses with transparent attribution.
+  educatorNotes: >-
+    A strong teaching example for discussing AI citation practices and source
+    verification. The visible citations make it easier to model critical
+    evaluation of AI outputs compared to tools that do not show their sources.
+
+- name: Cursor
+  url: https://cursor.sh
+  category: AI Code Editor
+  group: Development
+  cost: freemium
+  privacy: moderate
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    An AI-powered code editor built on VS Code that integrates large language
+    models directly into the development workflow. Supports code generation,
+    refactoring, and natural language editing of codebases.
+  educatorNotes: >-
+    Relevant for teacher educators who teach computational thinking or
+    educational technology courses. Demonstrates how AI-assisted development
+    works in practice — useful as a teaching example even if students are not
+    writing code themselves.
+
+- name: N8N
+  url: https://n8n.io
+  category: Workflow Automation
+  group: Development
+  cost: free
+  privacy: high
+  ferpaCompliant: false
+  coppaCompliant: false
+  description: >-
+    An open-source workflow automation platform that can be self-hosted for
+    maximum data privacy. Connects AI models, databases, and web services into
+    automated pipelines without requiring coding expertise.
+  educatorNotes: >-
+    Excellent for building automated workflows such as processing student survey
+    data through AI analysis, generating reports, or creating content pipelines.
+    Self-hosting ensures full data control. Requires some technical setup but no
+    ongoing coding.

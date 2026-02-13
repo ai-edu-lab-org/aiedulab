@@ -1,0 +1,184 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@import '@fontsource-variable/source-serif-4/wght.css';
+@import '@fontsource-variable/source-sans-3/wght.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+
+@theme {
+	/* Colors - default palette (Classic Blue) light mode */
+	--color-primary: oklch(0.45 0.12 250);
+	--color-primary-light: oklch(0.65 0.08 250);
+	--color-primary-dark: oklch(0.3 0.12 250);
+	--color-accent: oklch(0.65 0.18 150);
+	--color-accent-light: oklch(0.85 0.08 150);
+	--color-surface: oklch(0.98 0.005 250);
+	--color-surface-alt: oklch(0.95 0.01 250);
+	--color-text: oklch(0.2 0.02 250);
+	--color-text-muted: oklch(0.45 0.02 250);
+	--color-border: oklch(0.88 0.01 250);
+
+	/* Typography */
+	--font-heading: 'Source Serif 4 Variable', 'Georgia', serif;
+	--font-body: 'Source Sans 3 Variable', 'system-ui', sans-serif;
+	--font-mono: 'JetBrains Mono Variable', monospace;
+}
+
+/* ---- Smooth theme transitions ---- */
+html {
+	scrollbar-gutter: stable;
+}
+
+body,
+body * {
+	transition:
+		background-color 0.25s ease,
+		color 0.25s ease,
+		border-color 0.25s ease;
+}
+
+body {
+	font-family: var(--font-body);
+	color: var(--color-text);
+	background-color: var(--color-surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading);
+}
+
+/* ================================================
+   DARK MODE — Default (Classic Blue)
+   ================================================ */
+:root[data-theme='dark'] {
+	--color-primary: oklch(0.65 0.12 250);
+	--color-primary-light: oklch(0.5 0.1 250);
+	--color-primary-dark: oklch(0.75 0.1 250);
+	--color-accent: oklch(0.7 0.15 150);
+	--color-accent-light: oklch(0.4 0.08 150);
+	--color-surface: oklch(0.15 0.01 250);
+	--color-surface-alt: oklch(0.2 0.015 250);
+	--color-text: oklch(0.9 0.01 250);
+	--color-text-muted: oklch(0.65 0.02 250);
+	--color-border: oklch(0.3 0.02 250);
+}
+
+/* ================================================
+   FOREST palette
+   ================================================ */
+:root[data-palette='forest'] {
+	--color-primary: oklch(0.45 0.12 155);
+	--color-primary-light: oklch(0.65 0.08 155);
+	--color-primary-dark: oklch(0.3 0.12 155);
+	--color-accent: oklch(0.6 0.12 90);
+	--color-accent-light: oklch(0.85 0.06 90);
+	--color-surface: oklch(0.97 0.005 155);
+	--color-surface-alt: oklch(0.94 0.01 155);
+	--color-text: oklch(0.2 0.02 155);
+	--color-text-muted: oklch(0.45 0.02 155);
+	--color-border: oklch(0.87 0.01 155);
+}
+
+:root[data-palette='forest'][data-theme='dark'] {
+	--color-primary: oklch(0.65 0.12 155);
+	--color-primary-light: oklch(0.5 0.1 155);
+	--color-primary-dark: oklch(0.75 0.1 155);
+	--color-accent: oklch(0.7 0.1 90);
+	--color-accent-light: oklch(0.4 0.06 90);
+	--color-surface: oklch(0.15 0.01 155);
+	--color-surface-alt: oklch(0.2 0.015 155);
+	--color-text: oklch(0.9 0.01 155);
+	--color-text-muted: oklch(0.65 0.02 155);
+	--color-border: oklch(0.3 0.02 155);
+}
+
+/* ================================================
+   WARM EARTH palette
+   ================================================ */
+:root[data-palette='warm'] {
+	--color-primary: oklch(0.5 0.12 60);
+	--color-primary-light: oklch(0.7 0.08 60);
+	--color-primary-dark: oklch(0.35 0.12 60);
+	--color-accent: oklch(0.55 0.15 25);
+	--color-accent-light: oklch(0.85 0.06 25);
+	--color-surface: oklch(0.97 0.008 60);
+	--color-surface-alt: oklch(0.94 0.012 60);
+	--color-text: oklch(0.22 0.02 60);
+	--color-text-muted: oklch(0.47 0.02 60);
+	--color-border: oklch(0.87 0.012 60);
+}
+
+:root[data-palette='warm'][data-theme='dark'] {
+	--color-primary: oklch(0.7 0.12 60);
+	--color-primary-light: oklch(0.55 0.1 60);
+	--color-primary-dark: oklch(0.8 0.1 60);
+	--color-accent: oklch(0.65 0.12 25);
+	--color-accent-light: oklch(0.35 0.06 25);
+	--color-surface: oklch(0.16 0.012 60);
+	--color-surface-alt: oklch(0.21 0.015 60);
+	--color-text: oklch(0.9 0.01 60);
+	--color-text-muted: oklch(0.65 0.02 60);
+	--color-border: oklch(0.3 0.02 60);
+}
+
+/* ================================================
+   PLUM palette
+   ================================================ */
+:root[data-palette='plum'] {
+	--color-primary: oklch(0.45 0.15 310);
+	--color-primary-light: oklch(0.65 0.1 310);
+	--color-primary-dark: oklch(0.3 0.15 310);
+	--color-accent: oklch(0.6 0.12 350);
+	--color-accent-light: oklch(0.85 0.06 350);
+	--color-surface: oklch(0.97 0.006 310);
+	--color-surface-alt: oklch(0.94 0.01 310);
+	--color-text: oklch(0.2 0.02 310);
+	--color-text-muted: oklch(0.45 0.02 310);
+	--color-border: oklch(0.87 0.01 310);
+}
+
+:root[data-palette='plum'][data-theme='dark'] {
+	--color-primary: oklch(0.65 0.15 310);
+	--color-primary-light: oklch(0.5 0.1 310);
+	--color-primary-dark: oklch(0.75 0.1 310);
+	--color-accent: oklch(0.7 0.1 350);
+	--color-accent-light: oklch(0.4 0.06 350);
+	--color-surface: oklch(0.15 0.015 310);
+	--color-surface-alt: oklch(0.2 0.02 310);
+	--color-text: oklch(0.9 0.01 310);
+	--color-text-muted: oklch(0.65 0.02 310);
+	--color-border: oklch(0.3 0.02 310);
+}
+
+/* ================================================
+   OCEAN palette
+   ================================================ */
+:root[data-palette='ocean'] {
+	--color-primary: oklch(0.5 0.12 210);
+	--color-primary-light: oklch(0.7 0.08 210);
+	--color-primary-dark: oklch(0.35 0.12 210);
+	--color-accent: oklch(0.6 0.15 180);
+	--color-accent-light: oklch(0.85 0.06 180);
+	--color-surface: oklch(0.97 0.005 210);
+	--color-surface-alt: oklch(0.94 0.01 210);
+	--color-text: oklch(0.2 0.02 210);
+	--color-text-muted: oklch(0.45 0.02 210);
+	--color-border: oklch(0.87 0.01 210);
+}
+
+:root[data-palette='ocean'][data-theme='dark'] {
+	--color-primary: oklch(0.65 0.12 210);
+	--color-primary-light: oklch(0.5 0.1 210);
+	--color-primary-dark: oklch(0.75 0.1 210);
+	--color-accent: oklch(0.7 0.12 180);
+	--color-accent-light: oklch(0.4 0.06 180);
+	--color-surface: oklch(0.15 0.01 210);
+	--color-surface-alt: oklch(0.2 0.015 210);
+	--color-text: oklch(0.9 0.01 210);
+	--color-text-muted: oklch(0.65 0.02 210);
+	--color-border: oklch(0.3 0.02 210);
+}
